@@ -11,19 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140815194351) do
+ActiveRecord::Schema.define(version: 20140815191506) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "hamlists", force: true do |t|
-    t.string "name"
-  end
-
-  create_table "hamlists_songs", id: false, force: true do |t|
-    t.integer "hamlist_id", null: false
-    t.integer "song_id",    null: false
-  end
 
   create_table "songs", force: true do |t|
     t.string "title"
