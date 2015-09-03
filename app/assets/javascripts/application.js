@@ -32,5 +32,6 @@ App = {
 
 
 $(document).ready(function() {
-  
+  App.Routers.song = new App.Routers.Song();
+  Backbone.history.start();
 });
