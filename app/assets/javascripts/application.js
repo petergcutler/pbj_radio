@@ -30,18 +30,7 @@ App = {
   Routers: {}
 };
 
-// $(function() {
-//   player = new PlayerView();
-//   songs = new SongsCollection();
-//   songsView = new SongListView({
-//     collection: songs
-//   });
-//   songs.fetch({reset: true});
-// });
 
-function loadApp() {
-  App.router = new App.Router();
-  Backbone.history.start();
-}
-
-$(document).ready(loadApp);
+$(document).ready(function() {
+  
+});
